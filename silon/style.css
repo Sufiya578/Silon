@@ -1,0 +1,560 @@
+@font-face {
+  font-family: "Weddingday";
+  src: url(./assets/WeddingdayPersonalUseRegular-1Gvo0.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 85px;
+}
+
+.nav-bar a {
+  padding-inline: 10px;
+  text-decoration: none;
+  color: #242527;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.icons a > i {
+  padding-inline: 10px;
+  color: #242424;
+}
+
+.badge {
+  position: relative;
+}
+
+.icons a > span {
+  background-color: #dc3545;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  font-size: 14px;
+  padding: 2px;
+  font-weight: 500;
+  border-radius: 100%;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  right: -5px;
+  top: -10px;
+}
+
+.banner {
+  height: 500px;
+  background-image: url(./assets/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  text-align: center;
+}
+
+.banner-content h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #565656;
+  letter-spacing: 2px;
+}
+
+.banner-content h1 {
+  font-size: 65px;
+  margin-block: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #212529;
+  margin-block: 20px;
+  font-family: "Weddingday", "Roboto";
+}
+
+.banner-content h2 {
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 55px;
+  color: #212529;
+  margin-bottom: 48px;
+  font-family: "Weddingday", "Roboto";
+}
+
+.banner-img {
+  height: 500px;
+}
+
+.banner-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  padding: 15px 48px;
+  background-color: #ff5353;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.5s linear;
+}
+
+.btn:hover {
+  border-color: #ff5353;
+  background: transparent;
+  color: #ff5353;
+  cursor: pointer;
+}
+
+.featured-product {
+  height: 580px;
+  margin-top: 20px;
+}
+
+.featured-product > h2 {
+  font-family: "Weddingday", "Roboto";
+  font-size: 55px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.ruler {
+  width: 250px;
+  border: 1px solid #ff5353;
+  margin: auto;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  row-gap: 25px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  margin-inline: 15px;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.card-content {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.33);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.card-content h5 {
+  font-size: 16px;
+  color: #363739;
+  font-weight: 400;
+  line-height: 1.2;
+  padding-bottom: 4px;
+  padding-top: 10px;
+}
+
+.card-content span > i {
+  color: #ff5353;
+  font-size: 10px;
+  font-weight: 400;
+  padding-bottom: 2px;
+}
+
+.card-content > p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333741;
+  padding-bottom: 2px;
+}
+
+.shop-icons {
+  width: 100%;
+  height: 270px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.33);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  transform: translateY(200px);
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card:hover .shop-icons {
+  transform: translateY(-70px);
+  z-index: 99;
+}
+
+.shop-icons a {
+  text-decoration: none;
+  color: #6a6a6a;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 100%;
+}
+
+.shop-icons a > i {
+  font-size: 20px;
+}
+
+.shop-icons a:hover {
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.card-badges #shop-cart {
+  height: 200px;
+}
+
+.banner-2 {
+  height: 350px;
+  background-color: #eae2d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-desc > h2 {
+  font-size: 55px;
+  font-weight: 600;
+  font-family: "Dancing Script";
+}
+
+.banner-desc > h3 {
+  font-size: 25px;
+  color: #333741;
+  font-weight: 300;
+  margin-block: 32px;
+}
+
+.banner-img-2 {
+  height: 350px;
+}
+
+.banner-img-2 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-badges {
+  height: 660px;
+  margin-top: 20px;
+}
+
+.card-badges > h2 {
+  font-family: "Weddingday", "Roboto";
+  font-size: 55px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.badges {
+  border: 1px solid #dfdfdf;
+  padding: 25px 40px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-inline: 15px;
+}
+
+.badges > img {
+  padding: 10px;
+}
+.badges-content > h3 {
+  font-size: 15px;
+  color: #242527;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.badges-content > span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888888;
+}
+
+.trending-product {
+  height: 800px;
+  margin-top: 50px;
+}
+
+.trending-product > h2 {
+  font-family: "Weddingday", "Roboto";
+  font-size: 55px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.trending-product #trending-cart {
+  height: 200px;
+}
+
+.journal {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.journal > h2 ,
+.follow-us > h2{
+  font-family: "Weddingday", "Roboto";
+  font-size: 55px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card-w {
+  width: 100%;
+  max-width: 350px;
+}
+
+.card-info {
+  padding: 10px 0;
+}
+
+.card-info a {
+  text-decoration: none;
+  color: #888;
+  transition: all 0.3s;
+  display: inline-block;
+  margin-block: 8px;
+}
+
+.card-info a > span {
+  color: #888;
+}
+
+.card-info > a:nth-of-type(2) {
+  color: #242527;
+  font-weight: 600;
+  font-size: 20px;
+  display: inline-block;
+  margin-block: 10px;
+}
+
+.card-info #ruler-2 {
+  margin-block: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-info .comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-info .comment a {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.card-w a:hover,
+.card-w a:hover span{
+color:#dc3545;
+}
+
+.card-wrapper .demo-image{
+  height:250px;
+  margin-inline: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s linear;
+}
+
+.card-wrapper .demo-image .insta{
+  width:100%;
+  height:100%;
+  background: rgba(255, 83, 83, 0.65);
+  position: absolute;
+  left: 0;
+  top:40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.card-wrapper .demo-image:hover .insta{
+  opacity: 1;
+  top:0%;
+
+}
+
+.card-wrapper .demo-image:hover .insta a > i{
+  color: white;
+  font-weight: 400;
+  font-size: 40px;
+}
+.follow-us{
+  margin-bottom: 20px;
+}
+.footer{
+  background-color: #eae2d8;
+  padding-block: 3rem;
+}
+.wrapper{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column{
+  margin-inline: 80px;
+}
+.column > h2 {
+ font-size: 17px;
+ font-weight: 700;
+
+
+}
+.column > ul{
+list-style: none;
+margin-top: 32px;
+ 
+}
+.column > ul > li{
+  font-size: 14px;
+  margin: 8px 0;
+}
+.column > ul > li >a{
+  text-decoration: none;
+  color: #888;
+  transition: all 0.3s linear;
+}
+.wrapper .column ul > li > a:hover{
+  color: #ff5353;
+  margin-left: 4px ;
+}
+.wrapper .column:last-child > h4{
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+}
+ 
+.wrapper .column .btn-text-1{
+  background-color: white;
+  border: none;
+  padding: 5px 7px 6px 3px;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.3s linear;
+
+}
+.wrapper .column .btn-text-1 span:nth-of-type(1),
+.wrapper .column .btn-text-2 span:nth-of-type(1)
+  {
+  
+  font-size: 11px;
+
+}
+
+.wrapper .column .btn-text-1 span:last-child,
+.wrapper .column .btn-text-2 span:last-child{
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 3px;
+ 
+}
+.btn-text-1 > a > svg,
+.btn-text-2 > img{
+  vertical-align: middle;
+}
+.wrapper .column .btn-text-2{
+  background-color:#ff5353;
+  border: none;
+  padding: 5px 7px 6px 3px;
+  border-radius: 5px;
+ margin-left: 5px;
+ color: white;
+}
+.wrapper .column .btn-text-1:hover{
+  background-color: #ff5353;
+  color:white;
+  cursor:pointer;
+}
+.wrapper #ruler-3{
+  margin-top: 32px;
+  margin-bottom: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.social-media{
+  margin-top: 32px;
+}
+.social-media a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px;
+  border-radius: 50%;
+  color: #242527;
+  background-color: #fff;
+  margin:0 3px;
+}
+.social-media a > i{
+  padding: 6px 8px; 
+  font-size: 16px;
+}
+
+.social-media a:first-child:hover{
+  color:#1DA1F2;
+}
+.social-media a:nth-child(2):hover{
+color:#1DA1F2;
+}
+.social-media a:nth-child(3):hover{
+  color:#E60023;
+}
+.social-media a:last-child:hover{
+  color:#d62976;
+}
+ #ruler-4{
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+   margin-inline: 200px;
+}
+.copyright{
+  text-align: center;
+  padding-block: 16px;
+}
+
+.copyright span{
+  color: #888;
+  font-size: 15px
+}
+.copyright > a{
+  color:#ff5353;
+  text-decoration: none;
+  font-size: 15px;
+}
